@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmed website| UG3 Software Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg: #f4f4f8;
+      --text: #333;
+      --primary: #1ce783;
+      --secondary: #0b0b0b;
+      --card: #fff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body.dark {
+      --bg: #0b0b0b;
+      --text: #f5f5f5;
+      --card: #1a1a1a;
+      --shadow: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: var(--secondary);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px var(--shadow);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    #toggle-mode {
+      background: none;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    #toggle-mode:hover {
+      background: var(--primary);
+      color: black;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px var(--shadow);
+      margin-bottom: 30px;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    .card h4 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .contact a:hover {
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--secondary);
+      color: white;
+      margin-top: 60px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ahmed Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle-mode">Dark Mode</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>UG3 Software Engineering Student</h2>
+      <p>I would like to welcome you to my personal webpage.  Developing software, finding solutions to problems, and creating digital experiences that have an impact are all areas that I am enthusiastic about.</p>
+    </section>
+
+    <section class="section" id="about">
+      <h3>About Me</h3>
+      <div class="card">
+        <p>
+          At the moment, I am in the third year of my undergraduate studies in Software Engineering department. I am proficient in a variety of programming languages, including Python, Java, and C, and I take pleasure in working on both frontend and backend development. Full-stack development, artificial intelligence initiatives, and open-source contributions are the areas that most pique my attention.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="cv">
+      <h3>CV / Projects</h3>
+      <div class="card">
+        <h4>Key Skills</h4>
+        <ul>
+          <li>Programming: Python, Java, C, HTML, CSS, JavaScript</li>
+          <li>Tools: Git, GitHub, VS Code, Linux</li>
+          <li>Concepts: OOP, REST APIs, Databases, Agile</li>
+        </ul>
+        <h4>Recent Projects</h4>
+        <ul>
+          <li><strong>TechFlix</strong> – A streaming site for tech documentaries (HTML, CSS, JS)</li>
+          <li><strong>Tumor Classifier</strong> – ML-based cancer tumor classification (Python, KNN)</li>
+          <li><strong>Bank System</strong> – Java-based secure banking console app</li>
+        </ul>
+        <p>You can <a href="Ahmed_Mahmoud_CV.pdf" target="_blank" style="color: var(--primary); font-weight: bold;">download my full CV here</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h3>Contact Me</h3>
+      <div class="card contact">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:ahmed.mahmoud@example.com">ahmed.mahmoud@ukh.edu.krd</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Ahmed2004-pixel" target="_blank">github.com/Ahmed2004-pixel</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/ahmed-mahmoud" target="_blank">linkedin.com/in/ahmed-mahmoud</a></p>
+      </div>
+    </section>
+  </div>
+
+
+  <footer>
+    &copy; 2025 Ahmed Mahmoud | UG3 Software Engineer
+  </footer>
+
+  <script>
+    
+    const toggle = document.getElementById('toggle-mode');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+    });
+
+    
+    console.log("Welcome to Ahmed Mahmoud's portfolio site 👨‍💻");
+  </script>
+</body>
+</html>
